@@ -213,7 +213,7 @@ def input_checker(parsed_args):
 	# While technically not something to check, I put this code here anyway so that 
 	# all option processing is done in one place.
 	if parsed_args.outfile == '':
-		outfile = infile.split('.')[-2] + '.tsv'
+		outfile = f_name + '.tsv'
 	else:
 		outfile = parsed_args.outfile
 	
